@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            max-width: 900px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 30px;
+            background-color: #fff;
+        }
+
+        .sidebar {
+            background-color: #2C3E50;
+            color: white;
+            padding: 40px 30px;
+            width: 40%;
+            text-align: left;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .profile-pic img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid white;
+        }
+
+        .contact-info h2, .skills h2 {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #ffffff50;
+            padding-bottom: 5px;
+        }
+
+        .contact-info p, .skills ul {
+            font-size: 0.9em;
+            margin: 8px 0;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .skills ul li {
+            margin-bottom: 8px;
+        }
+
+        .main-content {
+            background-color: #ECF0F1;
+            padding: 40px;
+            width: 60%;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .main-content h1 {
+            font-size: 2.5em;
+            color: #2C3E50;
+            margin-bottom: 10px;
+        }
+
+        .main-content h2 {
+            font-size: 1.5em;
+            color: #34495E;
+            margin-bottom: 20px;
+        }
+
+        .about-me, .experience, .education, .project, .certification {
+            margin-bottom: 30px;
+        }
+
+        .about-me h2, .education h2, .experience h2, .project h2, .certification h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #2C3E50;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                margin: 10px;
+            }
+
+            .sidebar {
+                width: 100%;
+                border-radius: 10px 10px 0 0;
+            }
+
+            .main-content {
+                width: 100%;
+                border-radius: 0 0 10px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile-pic">
+                <img src="DSC_0467 copy.jpg" alt="Profile Picture">
+            </div>
+            <div class="contact-info">
+                <h2>Contact</h2>
+                <p>Email: chhornnarin168@gmail.com</p>
+                <p>Phone: +855 98 833 995</p>
+            </div>
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Programming: C, Python</li>
+                    <li>Networking: CCNA1, CCNA2</li>
+                    <li>Cyber Security Fundamentals</li>
+                    <li>Microsoft Office: Word, Excel</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <h1>Esaranarin Chhorn</h1>
+            <h2>Cyber Security, Telecom-Networking</h2>
+            <section class="about-me">
+                <h2>About Me:</h2>
+                <p>I am a passionate student at Cambodia Academy of Digital Technology, specializing in Cyber Security and Telecommunications Networking. I am committed to continuous learning and am actively seeking opportunities to grow in my field.</p>
+            </section>
+            <section class="education">
+                <h2>Education</h2>
+                <p>Bachelor of Telecommunications Networking, Specialized in Cyber Security</p>
+                <p>University: Cambodia Academy of Digital Technology - CADT, Phnom Penh, Cambodia</p>
+                <p>Expected Graduation: Feb 2027</p>
+            </section>
+            <section class="experience">
+                <h2>Experience</h2>
+                <p>- Year 2, Term 1 student</p>
+                <p>- Joined KHoding Hero 2024 mission at Siem Reap</p>
+                <p>- Graduated CCNA 1 in Year 1, Term 2</p>
+            </section>
+            <section class="project">
+                <h2>Projects</h2>
+                <p>- Developed a customer billing system to improve billing processes for small businesses...</p>
+            </section>
+            <section class="certification">
+                <h2>Certifications</h2>
+                <p>- KHoding Hero Appreciation Certification</p>
+                <p>- BacII 2023 Certification</p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
